@@ -1,0 +1,68 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="C4 niveau 1 - Contexte : Plateforme de données Camping (Les Pins d&#39;Argent)" id="0">
+    <mxGraphModel dx="1334" dy="931" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;fontSize=16;fontStyle=1;align=left;" value="C4 niveau 1 - Contexte : Plateforme de données Camping (Les Pins d&#39;Argent)" vertex="1">
+          <mxGeometry height="30" width="1000" x="20" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="dir" parent="1" style="shape=mxgraph.c4.person2;whiteSpace=wrap;html=1;align=center;metaEdit=1;points=[[0.5,0,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0]];resizable=0;fillColor=#083F75;fontColor=#ffffff;strokeColor=#06315C;fontSize=11;" value="&lt;b&gt;Direction commerciale&lt;/b&gt;&lt;br&gt;&lt;font style=&#39;font-size:9px&#39;&gt;[Personne]&lt;/font&gt;&lt;br&gt;&lt;br&gt;Suit l&amp;#x27;occupation et ajuste les prix" vertex="1">
+          <mxGeometry height="160" width="200" x="60" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tech" parent="1" style="shape=mxgraph.c4.person2;whiteSpace=wrap;html=1;align=center;metaEdit=1;points=[[0.5,0,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0]];resizable=0;fillColor=#083F75;fontColor=#ffffff;strokeColor=#06315C;fontSize=11;" value="&lt;b&gt;Services techniques&lt;/b&gt;&lt;br&gt;&lt;font style=&#39;font-size:9px&#39;&gt;[Personne]&lt;/font&gt;&lt;br&gt;&lt;br&gt;Traitent les fuites et anomalies" vertex="1">
+          <mxGeometry height="160" width="200" x="330" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="compta" parent="1" style="shape=mxgraph.c4.person2;whiteSpace=wrap;html=1;align=center;metaEdit=1;points=[[0.5,0,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0]];resizable=0;fillColor=#083F75;fontColor=#ffffff;strokeColor=#06315C;fontSize=11;" value="&lt;b&gt;Comptabilité&lt;/b&gt;&lt;br&gt;&lt;font style=&#39;font-size:9px&#39;&gt;[Personne]&lt;/font&gt;&lt;br&gt;&lt;br&gt;Déclare et reverse la taxe de séjour" vertex="1">
+          <mxGeometry height="160" width="200" x="870" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mkt" parent="1" style="shape=mxgraph.c4.person2;whiteSpace=wrap;html=1;align=center;metaEdit=1;points=[[0.5,0,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0]];resizable=0;fillColor=#083F75;fontColor=#ffffff;strokeColor=#06315C;fontSize=11;" value="&lt;b&gt;Marketing&lt;/b&gt;&lt;br&gt;&lt;font style=&#39;font-size:9px&#39;&gt;[Personne]&lt;/font&gt;&lt;br&gt;&lt;br&gt;Étudie le profil des clients consentants" vertex="1">
+          <mxGeometry height="160" width="200" x="600" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="plat" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;labelBackgroundColor=none;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=8;strokeColor=#0D5091;" value="&lt;b&gt;Plateforme de données Camping&lt;/b&gt;&lt;br&gt;&lt;font style=&#39;font-size:9px&#39;&gt;[Système logiciel, lakehouse Databricks]&lt;/font&gt;&lt;br&gt;&lt;br&gt;Collecte les données chaque nuit et publie 4 data products : occupation et yield, anomalies de consommation, taxe de séjour, profil de la clientèle" vertex="1">
+          <mxGeometry height="170" width="300" x="420" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="pms" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;labelBackgroundColor=none;fillColor=#8C8496;fontColor=#ffffff;align=center;arcSize=8;strokeColor=#736782;" value="&lt;b&gt;PMS&lt;/b&gt;&lt;br&gt;&lt;font style=&#39;font-size:9px&#39;&gt;[Système externe, PostgreSQL]&lt;/font&gt;&lt;br&gt;&lt;br&gt;Réservations, fiches clients, consentements" vertex="1">
+          <mxGeometry height="120" width="220" x="40" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="ota" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;labelBackgroundColor=none;fillColor=#8C8496;fontColor=#ffffff;align=center;arcSize=8;strokeColor=#736782;" value="&lt;b&gt;Agences en ligne (OTA)&lt;/b&gt;&lt;br&gt;&lt;font style=&#39;font-size:9px&#39;&gt;[Système externe]&lt;/font&gt;&lt;br&gt;&lt;br&gt;Booking, Campings.com" vertex="1">
+          <mxGeometry height="120" width="220" x="330" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="iot" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;labelBackgroundColor=none;fillColor=#8C8496;fontColor=#ffffff;align=center;arcSize=8;strokeColor=#736782;" value="&lt;b&gt;Objets connectés&lt;/b&gt;&lt;br&gt;&lt;font style=&#39;font-size:9px&#39;&gt;[Système externe]&lt;/font&gt;&lt;br&gt;&lt;br&gt;Bornes électriques, compteurs d&amp;#x27;eau, barrière RFID" vertex="1">
+          <mxGeometry height="120" width="220" x="620" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="commune" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;labelBackgroundColor=none;fillColor=#8C8496;fontColor=#ffffff;align=center;arcSize=8;strokeColor=#736782;" value="&lt;b&gt;Communes&lt;/b&gt;&lt;br&gt;&lt;font style=&#39;font-size:9px&#39;&gt;[Système externe]&lt;/font&gt;&lt;br&gt;&lt;br&gt;Reçoivent les déclarations de taxe de séjour" vertex="1">
+          <mxGeometry height="120" width="220" x="1150" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e0" edge="1" parent="1" source="pms" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=blockThin;endFill=1;fontSize=10;strokeColor=#828282;fontColor=#404040;labelBackgroundColor=#ffffff;" target="plat" value="Envoie séjours, fiches clients et consentements (chaque nuit, 4 h 30)">
+          <mxGeometry relative="1" x="-0.1739" y="-70" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="ota" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=blockThin;endFill=1;fontSize=10;strokeColor=#828282;fontColor=#404040;labelBackgroundColor=#ffffff;" target="plat" value="Dépose l&#39;export de la veille (CSV, 2 h)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="iot" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=blockThin;endFill=1;fontSize=10;strokeColor=#828282;fontColor=#404040;labelBackgroundColor=#ffffff;" target="plat" value="Envoie les relevés (toutes les 15 min)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="plat" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=blockThin;endFill=1;fontSize=10;strokeColor=#828282;fontColor=#404040;labelBackgroundColor=#ffffff;" target="dir" value="Publie dp_occupation_yield (6 h) ; répond en français (Genie)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="plat" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=blockThin;endFill=1;fontSize=10;strokeColor=#828282;fontColor=#404040;labelBackgroundColor=#ffffff;" target="tech" value="Signale les fuites (dp_conso_anomalies, 7 h)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="plat" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=blockThin;endFill=1;fontSize=10;strokeColor=#828282;fontColor=#404040;labelBackgroundColor=#ffffff;" target="compta" value="Fournit la base de taxe (dp_taxe_sejour)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="plat" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=blockThin;endFill=1;fontSize=10;strokeColor=#828282;fontColor=#404040;labelBackgroundColor=#ffffff;" target="mkt" value="Fournit le profil des clients consentants (dp_profil_clientele)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="compta" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=blockThin;endFill=1;fontSize=10;strokeColor=#828282;fontColor=#404040;labelBackgroundColor=#ffffff;" target="commune" value="Déclare et reverse la taxe de séjour (mensuel)">
+          <mxGeometry relative="1" x="-0.75" y="-100" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
